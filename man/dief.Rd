@@ -12,7 +12,7 @@ An implementation of the metrics dief@t and dief@k to measure the diefficiency (
 \tabular{ll}{
 Package: \tab dief\cr
 Type: \tab Package\cr
-Version: \tab 1.1\cr
+Version: \tab 1.2\cr
 Date: \tab 2017-10-30\cr
 License: \tab MIT\cr
 }
@@ -27,7 +27,7 @@ data(traces)
 # Plot answer traces for test "Q9.sparql"
 plotAnswerTrace(traces, "Q9.sparql")
 	
-# Compute dief@t with t the time where the fastest approach produced the last answer.
+# Compute dief@t with t the time where the slowest approach produced the last answer.
 dieft(traces, "Q9.sparql")
 	
 # Compute dief@t after 7.5 time units (seconds) of execution. 
